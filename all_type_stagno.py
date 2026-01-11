@@ -56,7 +56,7 @@ def reveal_file():
     file_data = content[name_end + 2:]
 
     # Save extracted file
-    output_path = os.path.join(os.path.expanduser("~"), "Desktop/stagno/extracted files", f"extracted_{file_name}")
+    output_path = os.path.join(os.path.expanduser("~"), "Desktop", f"extracted_{file_name}")
     with open(output_path, "wb") as out:
         out.write(file_data)
 
